@@ -1,6 +1,6 @@
 # Sentiment Analysis
 
-This is a sentiment analysis web application that utilizes a fine-tuned model to classify statements into three categories: **Political**, **Regional**, and **Sports**. The application is built using React for the frontend and Python/Node.js/Express.js for the backend.
+This is a sentiment analysis web application that utilizes a fine-tuned model to classify statements into three categories: **Political**, **Regional**, and **Sports**. The application is built using React for the frontend and Python/Node.js/Express.js for the backend. This application also detects postive and negative statements used to detect social media sentiment detection.
 
 ---
 
@@ -11,23 +11,9 @@ This is a sentiment analysis web application that utilizes a fine-tuned model to
 
 ---
 
-## Techstack
-Ensure the following are installed on your system:
-- **Node.js** (v14 or later)
-- **Python** (v3.8 or later)
-- **Express.js**
-- **React.js**
-- **MySQL** (for database setup)
-
----
-
 ## Getting Started
 
 ### Step 1: Clone the Repository
-```bash
-git clone <repository_url>
-cd sentiment-analysis
-```
 
 ### Step 2: Install Dependencies
 ```bash
@@ -61,37 +47,18 @@ CREATE TABLE results (
 );
 ```
 
-### Step 5: Start the Backend Servers
-Run the following commands in separate terminals:
+### Step 5: Run the frontend and backend commands
 
-1. Start the Python backend:
+1. Frontend
+```bash
+npm start
+```
+2. Start the Python backend:
    ```bash
    python app.py
    ```
-2. Start the Node.js server:
+3. Start the Node.js server:
    ```bash
    node --experimental-modules server.mjs
    ```
 
-### Step 6: Start the Frontend
-Launch the React application:
-```bash
-npm start
-```
-
----
-
-## Training Dataset
-The training dataset contains labeled examples for the categories: **Political**, **Regional**, and **Sports**.
-
----
-
-## Usage
-1. Access the application in your browser at `http://localhost:3000`.
-2. Enter a statement to analyze its sentiment.
-3. The application will display the predicted category.
-
----
-
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
