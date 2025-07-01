@@ -54,11 +54,11 @@ CREATE TABLE results (
 npm start
 ```
 2. Start the Python backend:
-   ```bash
-   python app.py
-   ```
-3. Start the Node.js server:
-   ```bash
-   node --experimental-modules server.mjs
-   ```
+```bash
+python app.py
+```
+4. Start the Node.js server:
+```bash
+node --experimental-modules server.mjs
+```
 
